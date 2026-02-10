@@ -15,7 +15,7 @@ Functions like `fetch()` are "asynchronous". Explain what that means and why it 
 
 ## Question 2: GET vs. POST
 
-What is the difference between a `GET` request and a `POST` request? Provide an example of when you would use each?
+What is the difference between a `GET` request and a `POST` request? Provide examples in real world applications where each might be used under the hood?
 
 **Your Answer:**
 

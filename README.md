@@ -45,7 +45,7 @@ When you are finished, create a pull request and tag your instructor for review.
 
 ## Short Response
 
-There are 3 short response questions for you to answer. Each one is worth 6 points (3 points for writing quality and 3 points for technical content).
+There are 3 short response questions for you to answer in the `SHORT_RESPONSE.md` file at the root of the repo. Each question is worth 6 points (3 points for writing quality and 3 points for technical content).
 
 The questions assess your knowledge of:
 1. Asynchronous Code

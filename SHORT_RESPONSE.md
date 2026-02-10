@@ -10,7 +10,6 @@ Before submitting your responses, use a spell checker / AI to ensure that you ha
 
 Functions like `fetch()` are "asynchronous". Explain what that means and why it is so important to be able to execute code asynchronously?
 
-
 **Your Answer:**
 
 
@@ -18,14 +17,12 @@ Functions like `fetch()` are "asynchronous". Explain what that means and why it 
 
 What is the difference between a `GET` request and a `POST` request? Provide an example of when you would use each?
 
-
 **Your Answer:**
 
 
 ## Question 3: What is Vite and Why Use It?
 
 What is Vite? What problem does it solve? And are there alternatives?
-
 
 **Your Answer:**
 

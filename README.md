@@ -1,16 +1,18 @@
 # Checkpoint 4.1: Interactive Data-Driven UIs
 
-Build a **Product Browser** application that fetches product data from the [DummyJSON Products API](https://dummyjson.com/products), renders it to the page, and lets users click products to view details and search for products using a form.
+**Sections:**
+1. Short Response (18 points)
+2. Coding (30 points)
 
 **Table of Contents:**
 - [Setup](#setup)
-- [Short Response](#short-response)
-- [Code](#code)
+- [Short Response (18 points)](#short-response-18-points)
+- [Code (30 points)](#code-30-points)
   - [API Reference](#api-reference)
   - [Part 1: Render All Products](#part-1-render-all-products)
   - [Part 2: Product Details with Event Delegation](#part-2-product-details-with-event-delegation)
   - [Part 3: Search Form with Async/Await](#part-3-search-form-with-asyncawait)
-  - [Grading Checklists](#grading-checklists)
+  - [Code Grading Checklist (30 points)](#code-grading-checklist-30-points)
 
 **<details><summary>Asking ChatGPT for Help</summary>**
 
@@ -43,7 +45,7 @@ git push                # push the new commit to the remote repo
 
 When you are finished, create a pull request and tag your instructor for review.
 
-## Short Response
+## Short Response (18 points)
 
 There are 3 short response questions for you to answer in the `SHORT_RESPONSE.md` file at the root of the repo. Each question is worth 6 points (3 points for writing quality and 3 points for technical content).
 
@@ -52,7 +54,13 @@ The questions assess your knowledge of:
 2. GET vs. POST
 3. What is Vite and Why Use It?
 
-## Code
+## Code (30 points)
+
+Build a **Product Browser** application that fetches product data from the [DummyJSON Products API](https://dummyjson.com/products), renders it to the page, and lets users click products to view details and search for products using a form.
+
+When you are done, it will look like this:
+
+![A screenshot of the completed project](./screenshot.png)
 
 A Vite project has been set up for you with the HTML, CSS, and configuration files.
 
@@ -144,7 +152,7 @@ Then, in `src/main.js`, add a form submit handler:
 - If the fetch fails, display the `error.message` value in the `#error-message` paragraph element
 - Reset the form after a successful search
 
-### Grading Checklists
+### Code Grading Checklist (30 points)
 
 **ES Modules**
 

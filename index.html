@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Browser</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
   <header>
     <h1>Product Browser</h1>
   </header>
+  
+  <p id="error-message"></p>
 
   <main>
     <section id="product-details" class="hidden">
@@ -22,23 +22,22 @@
       <p>Rating: <span id="product-rating"></span> / 5</p>
     </section>
 
-    <form id="search-form">
-      <label for="query">Search</label>
-      <input type="text" id="query" name="query" placeholder="Search products..." required>
-      <button type="submit">Search</button>
-    </form>
-
-    <p id="error-message"></p>
-
     <section>
       <h2 id="products-heading">Products (<span id="product-count">0</span>)</h2>
+
+      <form id="search-form">
+        <div>
+          <label for="query">Search</label>
+          <input type="text" id="query" name="query" placeholder="Search products..." required>
+        </div>
+        <button type="submit">Search</button>
+      </form>
+
       <ul id="products-list"></ul>
     </section>
-
   
   </main>
-
-  <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src-solution/main.js"></script>
 </body>
 
 </html>

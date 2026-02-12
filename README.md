@@ -90,13 +90,13 @@ The API you will use for this checkpoint is [https://dummyjson.com/docs/products
 
 When the page loads, the app should fetch all products from the [https://dummyjson.com/docs/products API](https://dummyjson.com/docs/products) and render them as a list of cards.
 
-First, in `src/fetch-helpers.js` create and export a `getProducts()` function that:
+**First, in `src/fetch-helpers.js` create and export a `getProducts()` function that:**
 - Invokes `fetch()` to get all products
 - Handles the resolved/rejected promise with `.then()` and `.catch()`
 - Checks `response.ok` and throws an error if the response is not ok
 - Returns a `{ data, error }` object for both resolved and rejected promises.
 
-Then, in `src/dom-helpers.js` create and export a `renderProducts(products)` function that:
+**Then, in `src/dom-helpers.js` create and export a `renderProducts(products)` function that:**
 - Clears the existing `#products-list` content
 - Updates `#product-count` with the number of products
 - For each product, creates an `li` with:
@@ -106,8 +106,7 @@ Then, in `src/dom-helpers.js` create and export a `renderProducts(products)` fun
 - Stores the product `id` on the `li` using a `data-` attribute
 - Appends each `li` to `#products-list`
 
-Lastly, in `src/main.js`, combine your function to fetch and render products on page load
-
+**Lastly, in `src/main.js`, combine your function to fetch and render products on page load**
 - Import `getProducts` from `fetch-helpers.js` and `renderProducts` from `dom-helpers.js`
 - Call `getProducts()` and chain `.then()` to render the products
 - If the fetch fails, display the `error.message` value in the `#error-message` paragraph element.
@@ -116,17 +115,17 @@ Lastly, in `src/main.js`, combine your function to fetch and render products on 
 
 When a user clicks on a product card, the app should fetch that product's full details from the [https://dummyjson.com/docs/products API](https://dummyjson.com/docs/products) and display them.
 
-First, in `src/fetch-helpers.js` add and export a `getProductById(id)` function that:
+**First, in `src/fetch-helpers.js` add and export a `getProductById(id)` function that:**
 - Invokes `fetch()` to get a single product that matches the given `id`
 - Handles the resolved/rejected promise with `.then()` and `.catch()`
 - Checks `response.ok` and throws an error if the response is not ok
 - Returns a `{ data, error }` object for both resolved and rejected promises.
 
-Then, in `src/dom-helpers.js` add and export a `renderProductDetails(product)` function that:
+**Then, in `src/dom-helpers.js` add and export a `renderProductDetails(product)` function that:**
 - Clears the `#product-details` section and makes it visible (removes the `hidden` attribute)
 - Displays the product's title, thumbnail, price, description, and using the existing HTML elements
 
-Lastly, in `src/main.js`, add a click handler using event delegation:
+**Lastly, in `src/main.js`, add a click handler using event delegation:**
 - Add a single `click` event listener on `#products-list` (not on each `li`)
 - Use `event.target.closest('li')` to find the clicked product card
 - Read the product ID from the element's `dataset`
@@ -137,13 +136,13 @@ Lastly, in `src/main.js`, add a click handler using event delegation:
 
 Add search functionality using `async`/`await` syntax instead of `.then()`/`.catch()`. Fetch all products that match a given input from the [https://dummyjson.com/docs/products API](https://dummyjson.com/docs/products).
 
-First, in `src/fetch-helpers.js` add and export a `searchProducts(query)` function that:
+**First, in `src/fetch-helpers.js` add and export a `searchProducts(query)` function that:**
 - Invokes `fetch()` to get all products that match the given `query`
 - Uses `async`/`await` with `try`/`catch` (instead of `.then()`/`.catch()`)
 - Checks `response.ok` and throws an error if the response is not ok
 - Returns a `{ data, error }` object for both resolved and rejected promises.
 
-Then, in `src/main.js`, add a form submit handler:
+**Then, in `src/main.js`, add a form submit handler:**
 - Add a `submit` event listener to `#search-form`
 - Prevent the default form submission behavior
 - Extract the search query from the form

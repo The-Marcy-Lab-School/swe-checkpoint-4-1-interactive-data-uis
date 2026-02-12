@@ -1,7 +1,3 @@
-export const fetchData = (url) => {
-
-};
-
 export const getProducts = () => {
 
 };
